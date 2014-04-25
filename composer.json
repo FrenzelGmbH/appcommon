@@ -29,6 +29,7 @@
     "philippfrenzel/yii2imageslider":"*",
     "anthonymartin/geo-location":"dev-master",        
     "dektrium/yii2-user":"dev-master",
+    "knplabs/gaufrette": "0.2.*@dev",
     "nlp-tools/nlp-tools":"dev-master"
   },
   "require-dev": {
