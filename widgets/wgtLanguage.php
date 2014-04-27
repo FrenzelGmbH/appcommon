@@ -29,7 +29,7 @@ class wgtLanguage extends Block
 
   protected function renderContent()
   {
-    echo $this->render('@appcommon/widgets/views/_wgtLanguage',array('language' => $this->language,'existinglanguages'=>$this->existinglanguages));
+    echo $this->render('@frenzelgmbh/appcommon/widgets/views/_wgtLanguage',array('language' => $this->language,'existinglanguages'=>$this->existinglanguages));
   }
 
 }
