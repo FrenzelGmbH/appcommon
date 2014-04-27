@@ -30,7 +30,9 @@ class Module extends BaseModule {
     {
         parent::init();
         
-        \Yii::setAlias('@appcommon', dirname(__FILE__));
+        $this->setAliases([
+            '@appcommon' => __DIR__
+        ]);
         \Yii::$app->i18n->translations['appcommon'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
