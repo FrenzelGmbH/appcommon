@@ -1,7 +1,16 @@
 appcommon
 =========
 
-Common Classes for our Apps
+Common Classes for our Apps - as we are currently moving to a complete modular development!
+Normally appcommon is used by every "app" and mostly by our modules. This is because the widgets
+are mostly extended from the base classes in here...
+
+If you have any suggestions or whishes let us know, if it makes sense, we are always willing to change our modules!
+
+One thing that is very important, that modules should be as "flexible" as possible, so they can be addopted into
+any project without changing e.g. the database structure.
+
+For styling puposes we considure that you are using the bootstrap css framework. We have no plans to support others!
 
 Installation
 ============
