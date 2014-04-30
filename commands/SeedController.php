@@ -83,7 +83,6 @@ class SeedController extends Controller
    */
   protected function seed()
   {
-    Yii::$app->getComponent('seeder')->prepare();
+    Yii::$app->get('seeder')->prepare();
   }
 }
-
