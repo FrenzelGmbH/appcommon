@@ -107,7 +107,7 @@ class DbFixtureManager extends Component
   public function getDbConnection()
   {
     if (is_string($this->db)) {
-      $this->db = Yii::$app->getComponent($this->db);
+      $this->db = Yii::$app->get($this->db);
     }
     if (!$this->db instanceof Connection) {
       throw new Exception("The 'db' option must refer to the application component ID of a DB connection.");
