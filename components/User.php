@@ -149,9 +149,12 @@ class User extends BaseUser implements UserInterface
 	 * @return boolean if access is granted or not
 	 */
 	public function checkAccess($role){
-		if(Yii::$app->user->identity->role == self::$roles[$role] && !\Yii::$app->user->isGuest)
+		if(!\Yii::$app->user->isGuest)
 		{
-			return true;
+			if(Yii::$app->user->identity->role == self::$roles[$role])
+			{
+				return true;
+			}
 		}
 		return false;
 	}
