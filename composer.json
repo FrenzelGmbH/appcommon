@@ -30,8 +30,7 @@
     "kartik-v/yii2-icons": "dev-master",
     "kartik-v/yii2-widgets": "dev-master",
     "kartik-v/yii2-helpers": "dev-master",
-    "kartik-v/yii2-grid": "dev-master",    
-    "anthonymartin/geo-location":"dev-master",        
+    "kartik-v/yii2-grid": "dev-master",        
     "dektrium/yii2-user":"dev-master",
     "knplabs/gaufrette": "0.2.*@dev",
     "nlp-tools/nlp-tools":"dev-master",
@@ -42,7 +41,8 @@
     "yiisoft/yii2-gii":"*",
     "schmunk42/yii2-packaii":"*",
     "phpdocumentor/phpdocumentor":"2.*",
-    "guzzlehttp/guzzle":"~4.0"
+    "guzzlehttp/guzzle":"~4.0",
+    "subdee/yii2-soap-server": "*"
   },
   "autoload": {
     "psr-4": {
