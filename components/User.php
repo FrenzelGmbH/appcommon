@@ -168,4 +168,17 @@ class User extends BaseUser implements UserInterface
 		return ArrayHelper::map(self::find()->orderBy('username')->asArray()->all(), 'id', 'username');
 	}
 
+	/**
+   * @inheritdoc
+   */
+  public static function findIdentityByAccessToken($token,$type = NULL)
+  {
+      foreach (self::findAll() as $user) {
+          if ($user['accessToken'] === $token) {
+              return new static($user);
+          }
+      }
+
+      return null;
+  }
 }
