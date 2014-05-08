@@ -7,9 +7,8 @@ use yii\db\Query;
 use yii\helpers\ArrayHelper;
 
 use dektrium\user\models\User as BaseUser;
-use dektrium\user\models\UserInterface;
 
-class User extends BaseUser implements UserInterface
+class User extends BaseUser
 {
 
 	//defining the roles available for users
