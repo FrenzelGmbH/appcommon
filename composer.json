@@ -19,6 +19,12 @@
       "homepage": "http://frenzel.net"
     }
   ],
+  "repositories": [
+    {
+      "type": "pear",
+      "url": "http://pear.horde.org"
+    }
+  ],
   "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2":"*",
