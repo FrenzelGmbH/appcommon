@@ -38,6 +38,9 @@ class Module extends BaseModule {
             'sourceLanguage' => 'en-US',
             'basePath' => '@frenzelgmbh/appcommon/messages',
         ];
+        //get the displayed view and register the needed assets
+        //as we have no view in this context we need to make the way over the $app->view
+        commonAsset::register(\Yii::$app->view);
     }
 
 }
