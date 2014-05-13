@@ -44,9 +44,12 @@ class User extends BaseUser
 	 */
 	public function getIsAdmin()
 	{
-		if(\Yii::$app->user->identity->role < 2 AND !\Yii::$app->user->isGuest)
+		if(!\Yii::$app->user->isGuest)
 		{
-			return true;
+			if(\Yii::$app->user->identity->role < 2)
+			{
+				return true;
+			}
 		}
 		return false;
 	}
@@ -57,9 +60,12 @@ class User extends BaseUser
 	 */
 	public function getIsAdvanced()
 	{
-		if(\Yii::$app->user->identity->role < 3 AND !\Yii::$app->user->isGuest)
+		if(!\Yii::$app->user->isGuest)
 		{
-			return true;
+			if(\Yii::$app->user->identity->role < 3)
+			{
+				return true;
+			}
 		}
 		return false;
 	}
@@ -70,9 +76,12 @@ class User extends BaseUser
 	 */
 	public function getIsUser()
 	{
-		if(\Yii::$app->user->identity->role < 4 AND !\Yii::$app->user->isGuest)
+		if(!\Yii::$app->user->isGuest)
 		{
-			return true;
+			if(\Yii::$app->user->identity->role < 4)
+			{
+				return true;
+			}
 		}
 		return false;
 	}
