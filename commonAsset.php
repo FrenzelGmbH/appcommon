@@ -20,9 +20,10 @@ class commonAsset extends AssetBundle
     
     public $js = [
       'js/css3-mediaqueries.js',
-      'js/jquery.form.js',
-      'js/jquery.scrollUp.min.js'
+      'js/jquery.form.js'
     ];
     
-    public $depends = [];
+    public $depends = [
+      'yii\web\YiiAsset'
+    ];
 }
