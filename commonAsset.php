@@ -16,11 +16,14 @@ class commonAsset extends AssetBundle
 {
     public $sourcePath = '@frenzelgmbh/appcommon/assets';
     
-    public $css = [];
+    public $css = [
+      'css/appcommon.css'
+    ];
     
     public $js = [
       'js/css3-mediaqueries.js',
-      'js/jquery.form.js'
+      'js/jquery.form.js',
+      'js/jquery.scrollUp.min.js'
     ];
     
     public $depends = [

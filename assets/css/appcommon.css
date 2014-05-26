@@ -1,0 +1,9 @@
+.handy{
+  cursor: move;
+  font-family: verdana, cursive;
+}
+
+.widgettoolbar{
+  font-color:#222;
+  background-color: #cdcdcd;
+}

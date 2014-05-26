@@ -118,7 +118,7 @@ class AdminPortlet extends Block
    * Renders the portlet admin toolbar
    */
   public function renderToolbar(){
-    echo "<div class='widgettoolbar'><i class='icon icon-move handy'></i> ";
+    echo "<div class='widgettoolbar'><i class='fa fa-move handy'></i> ";
     if(count($this->adminActions)>0){
       echo yii2toolbarbutton::widget(array(
         'items'=> $this->adminActions
