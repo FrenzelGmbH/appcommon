@@ -34,6 +34,11 @@ return [
         'class' => 'yii\db\Connection',
         // set up db info
 ];
+
+//add the following line to your Assets-Config in the depends section
+
+'frenzelgmbh\appcommon\commonAsset'
+
 ```
 
 Run migration file
