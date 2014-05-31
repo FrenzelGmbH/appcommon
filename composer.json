@@ -28,6 +28,7 @@
   "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2":"*",
+    "frenzelgmbh/adminui": "dev-master",
     "philippfrenzel/yii2toolbarbutton":"dev-master",
     "philippfrenzel/yii2tooltipster":"dev-master",
     "philippfrenzel/yiiwymeditor":"dev-master",
