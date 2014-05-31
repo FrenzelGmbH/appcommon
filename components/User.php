@@ -89,14 +89,15 @@ class User extends BaseUser
 	/**
 	 * [getCurrentEntityId description]
 	 * @return integer the primary party key of the user that will log in
+	 * @todo needs to be refactored, as it doesn't make sense...
 	 */
 	public function getCurrentEntityId()
 	{
 		$query = new Query;
 		$query->select('tbl_party.id AS id')
 			->from('tbl_user')
-      ->innerJoin('tbl_contact', 'tbl_contact.email = tbl_user.email')
-      ->innerJoin('tbl_party','tbl_party.id = tbl_contact.party_id')
+      		->innerJoin('tbl_contact', 'tbl_contact.email = tbl_user.email')
+      		->innerJoin('tbl_party','tbl_party.id = tbl_contact.party_id')
 			->where('tbl_user.id = '.\Yii::$app->user->identity->id)
 			->one();
 		
@@ -115,7 +116,7 @@ class User extends BaseUser
 		$query = new Query;
 		$query->select('id')
 			->from('tbl_user')
-      ->where(['email' => $email])
+      		->where(['email' => $email])
 			->one();
 		
 		$command = $query->createCommand();
