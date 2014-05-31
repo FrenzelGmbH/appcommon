@@ -14,12 +14,12 @@ class User extends BaseUser
 	//defining the roles available for users
 	const ROLE_ADMIN    = 1;
 	const ROLE_ADVANCED = 2;
-	const ROLE_USER 	  = 3;
+	const ROLE_USER 	 = 3;
 
 	public static $roles = [
-			'admins'   => self::ROLE_ADMIN,
-			'advanced' => self::ROLE_ADVANCED,
-			'users'    => self::ROLE_USER
+			1   => self::ROLE_ADMIN,
+			2 	=> self::ROLE_ADVANCED,
+			3   => self::ROLE_USER
 	];
 
 	public static function getRoleOptions()
